@@ -1,0 +1,17 @@
+*.log
+*.tmp
+*~
+.directory
+.DS_Store
+Thumbs.db
+.vagrant
+snapshots
+*.iml
+.idea/
+target/
+pom.xml.versionsBackup
+*.ipr
+*.iws
+.profile
+.history
+tmp/
