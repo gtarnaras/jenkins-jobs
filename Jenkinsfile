@@ -4,7 +4,7 @@ pipeline {
         stage('build') {
             steps {
                 echo 'Hello Covid World'
-                sh 'ls'
+                sh 'setup.sh'
             }
         }
     }
