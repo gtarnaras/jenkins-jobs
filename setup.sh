@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 function set_me_up {
     wget http://localhost:8080/jnlpJars/jenkins-cli.jar
     for jenkins_job in ${ROOT_DIR}/jenkins_jobs/*.xml; do
