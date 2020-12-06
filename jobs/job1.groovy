@@ -7,7 +7,7 @@ folder(folderName) {
     description('My Jobs')
 }
 
-job = freeStyleJob("$folderName/test-job")
+job = freeStyleJob("$folderName/test-job1")
 addDefaults(job)
 addTimestampsWrapper(job)
 
