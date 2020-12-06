@@ -8,8 +8,11 @@ pipeline {
             }
         }
         stage('Test') {
-            jobDsl(additionalClasspath: 'src/main/groovy', removedJobAction: 'DELETE', removedViewAction: 'DELETE',
-                targets: 'jobs/jobs.groovy', unstableOnDeprecation: true)
+            steps {
+
+                jobDsl(additionalClasspath: 'src/main/groovy', removedJobAction: 'DELETE', removedViewAction: 'DELETE',
+                    targets: 'jobs/jobs.groovy', unstableOnDeprecation: true)
+            }
         }
     }
 }
