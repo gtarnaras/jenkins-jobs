@@ -1,10 +1,10 @@
 import static jobdsl.JobUtils.addDefaults
 import static jobdsl.JobUtils.addTimestampsWrapper
 
-folderName = 'myjobs'
+folderName = 'myapp'
 
 folder(folderName) {
-    description('My Jobs')
+    description('My App')
 }
 
 job = freeStyleJob("$folderName/test-job2")
