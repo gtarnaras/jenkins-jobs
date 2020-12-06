@@ -7,11 +7,9 @@ pipeline {
                 sh './setup.sh JenkinsJobs'
             }
         }
-        if (BRANCH_NAME == 'master') {
-            stage('Test') {
-                jobDsl(additionalClasspath: 'src/main/groovy', removedJobAction: 'DELETE', removedViewAction: 'DELETE',
-                        targets: 'jobs/jobs.groovy', unstableOnDeprecation: true)
-            }
+        stage('Test') {
+            jobDsl(additionalClasspath: 'src/main/groovy', removedJobAction: 'DELETE', removedViewAction: 'DELETE',
+                targets: 'jobs/jobs.groovy', unstableOnDeprecation: true)
         }
     }
 }
